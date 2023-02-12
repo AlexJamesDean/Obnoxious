@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBNXS.XYZ | Obnoxious Games, Radio and Events</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="OBNXS.XYZ is a gaming community that hosts events, radio and games.">
+    <meta name="keywords" content="OBNXS, OBNXS.XYZ, Obnoxious, Obnoxious Games, Obnoxious Radio, Obnoxious Events, Obnoxious Gaming, Obnoxious Community, Obnoxious Discord, Obnoxious Discord Server, Obnoxious Discord Invite, Obnoxious Discord Link, Obnoxious Discord Invite Link, Obnoxious Discord Server Link, Obnoxious Discord Invite Link, Obnoxious Discord Server Invite Link, Obnoxious">
+    <meta name="author" content="OBNXS.XYZ">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+</head>
+<body>
+    <nav class="nav-static">
+        <a href="index.html" class="nav-link"><img src="assets/img/icons/home-icon.png" alt="home icon" class="nav-link-icon">Home</a>
+        <a href="radio.html" class="nav-link"><img src="assets/img/icons/radio-icon.png" alt="Radio icon" class="nav-link-icon">Radio</a>
+        <a href="rust.html" class="nav-link"><img src="assets/img/icons/gaming-icon.png" alt="gamepad icon" class="nav-link-icon">[EU West] OBNXS Hapis</a>
+        <a href="https://discord.gg/EfzAj8HNvE" class="nav-link"><img src="assets/img/icons/community-icon.png" alt="community icon" class="nav-link-icon">Discord</a>
+        <a href="about.html" class="nav-link"><img src="assets/img/icons/about-icon.png" alt="personal icon" class="nav-link-icon">About</a>
+    </nav>
+    <div class="cards">
+        <a href="externalplayer.html" target="popup" onclick="window.open('../html-link.htm','name','width=600,height=400')" class="card-home-link">
+        <div class="card-home">
+            <img src="https://picsum.photos/350/460" alt="OBNXS.XYZ" class="logo">
+            <div class="card-home-info">
+                <img src="assets/img/icons/cart-icon.png" alt="OBNXS.XYZ" class="logo">
+                <h2>Listen Live</h2>
+            </div>
+        </div>
+        </a>
+        <a href="events.html#upcoming" class="card-home-link">
+        <div class="card-home">
+            <img src="https://picsum.photos/357/463" alt="OBNXS.XYZ" class="logo">
+            <div class="card-home-info">
+                <img src="assets/img/icons/events-icon.png" alt="OBNXS.XYZ" class="logo">
+                <h2>Upcoming Events</h2>
+            </div>
+        </div>
+        </a>
+        <a href="offers.html#latest" class="card-home-link">
+        <div class="card-home">
+            <img src="https://picsum.photos/354/464" alt="OBNXS.XYZ" class="logo">
+            <div class="card-home-info">
+                <img src="assets/img/icons/discount-icon.png" alt="OBNXS.XYZ" class="logo">
+                <h2>Merch</h2>
+            </div>
+        </div>
+        </a>
+        <a href="radio.html#timetable" class="card-home-link">
+        <div class="card-home">
+            <img src="https://picsum.photos/351/469" alt="OBNXS.XYZ" class="logo">
+            <div class="card-home-info">
+                <img src="assets/img/icons/events-icon.png" alt="OBNXS.XYZ" class="logo">
+                <h2>Radio Timetable</h2>
+            </div>
+        </div>
+        </a>
+        <a href="network.html" class="card-home-link">
+        <div class="card-home">
+            <img src="https://picsum.photos/359/461" alt="OBNXS.XYZ" class="logo">
+            <div class="card-home-info">
+                <img src="assets/img/icons/network-icon.png" alt="OBNXS.XYZ" class="logo">
+                <h2>Sponsors</h2>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="register">
+        <h3>Help us grow, earn gaming rewards!</h3>
+        <div class="register-container">
+            <div id="rewards-card">
+                <h4>Level 1 Rewards</h4>
+                <img src="" alt="Level 1 Rewards">
+            </div>
+            <div id="rewards-card">
+                <h4>Level 10 Rewards</h4>
+                <img src="" alt="Level 10 Rewards">
+            </div>
+            <div id="rewards-card">
+                <h4>Level 40 Rewards</h4>
+                <img src="" alt="Level 40 Rewards">
+            </div>
+            <div id="rewards-card">
+                <h4>Level 70 Rewards</h4>
+                <img src="" alt="Level 70 Rewards">
+            </div>
+            <div id="rewards-card">
+                <h4>Level 100 Rewards</h4>
+                <img src="" alt="Level 100 Rewards">
+            </div>
+            <button class="signup" type="button" onclick="showForm()">Sign Up!</button>
+        </div>
+
+        <form action="register.php" method="post" class="register-form" style="display: none;">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="email" name="email" placeholder="Email" required>            <input type="password" name="password2" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <div class="userpanel" style="display: none;">
+        <img src="#" alt="User Panel">
+        <h1>{USERNAME}</h1>
+        <h3>Role: <a href="roles.html">{USERROLE}</a></h3>
+        <h3>XP: <a href="experience.html">{USERXP}</a></h3>
+        <h3>Level: <a href="levels.html">{USERLEVEL}</a></h3> 
+    </div>
+    <script type="text/javascript">
+        function showForm() {
+            document.querySelector('.register-form').style.display = "block";
+            document.querySelector('.register-container').style.display = "none";
+        }   
+
+        
+    </script>
+</body>
+</html>
